@@ -1,0 +1,123 @@
+import React from 'react';
+
+const About = () => {
+  return (
+    <section id="about" className="py-20 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+            About Virtus Vision
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Pioneering the future of mobile medical diagnostics through innovative AI solutions.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left Content */}
+          <div className="space-y-8">
+            <div className="space-y-6">
+              <h3 className="text-2xl font-bold text-gray-900">
+                About VirtusVision.ai
+              </h3>
+              <p className="text-gray-600 leading-relaxed">
+                Founded in Türkiye by academic researchers, VirtusVision.ai is a woman-led deep tech startup creating medical imaging solutions that empower healthcare professionals.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                We build mobile diagnostic tools in areas that lack standard, scalable, and digital solutions — such as allergy tests, eye assessments, orthopedics, skin conditions, and facial symmetry analysis.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                Our mission is to modernize outdated diagnostic workflows by replacing manual, contact-based methods with AI-powered, ethical, and eco-conscious alternatives.
+              </p>
+              <p className="text-gray-600 leading-relaxed">
+                We collaborate with university hospitals, clinicians, and students to develop impactful and research-backed technologies. With a growing team of founders, advisors, and future-oriented interns, we aim to become a European leader in mobile diagnostics.
+              </p>
+            </div>
+
+            {/* Key Achievements */}
+            <div className="space-y-4">
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Industry-Leading Accuracy</h4>
+                  <p className="text-gray-600">99.8% detection accuracy across diverse use cases</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">Real-time Processing</h4>
+                  <p className="text-gray-600">Sub-millisecond response times for critical applications</p>
+                </div>
+              </div>
+
+              <div className="flex items-start space-x-3">
+                <div className="w-6 h-6 bg-primary-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                  <svg className="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 className="font-semibold text-gray-900">GDPR Compliant</h4>
+                  <p className="text-gray-600">Full compliance with European data protection standards</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Right Content - Team & Values */}
+          <div className="space-y-8">
+            {/* Leadership Section */}
+            <div className="bg-gray-50 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-gray-900 mb-6">Leadership Team</h3>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">ZH</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Zeynep Filiz Eren</h4>
+                    <p className="text-primary-600">CEO & Founder</p>
+                    <p className="text-sm text-gray-600">Computer Vision Expert</p>
+                  </div>
+                </div>
+
+                <div className="flex items-center space-x-4">
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
+                    <span className="text-white font-bold text-xl">AH</span>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-gray-900">Hasan Ali Özkan</h4>
+                    <p className="text-blue-600">CTO</p>
+                    <p className="text-sm text-gray-600">AI & Machine Learning Lead</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Mission Statement */}
+            <div className="bg-primary-50 rounded-2xl p-8">
+              <h3 className="text-xl font-bold text-primary-900 mb-4">Our Mission</h3>
+              <p className="text-primary-800 leading-relaxed">
+               Modernize outdated diagnostic workflows by replacing manual, contact-based methods with AI-powered, ethical, and eco-conscious alternatives.
+We collaborate with university hospitals, clinicians, and students to develop impactful and research-backed technologies.
+With a growing team of founders, advisors, and future-oriented interns, we aim to become a European leader in mobile diagnostics.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default About; 
