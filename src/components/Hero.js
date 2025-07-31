@@ -8,32 +8,32 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight text-shadow">
+              <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 leading-tight text-shadow fade-in-up">
                 Reimagining
                 <span className="text-primary-600 gradient-text"> Medical Diagnostics</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed">
+              <p className="text-xl text-gray-600 leading-relaxed fade-in-up-delay-1">
                 Turning images into insights with mobile, AI-powered healthcare tools.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
+              <p className="text-lg text-gray-600 leading-relaxed fade-in-up-delay-2">
                 Virtus R&D Software Inc. develops contactless, image-based medical diagnostic tools using LiDAR, computer vision, and AI. Our first solution modernizes allergy testing with a touchless mobile app.
               </p>
-              <p className="text-lg text-gray-600 leading-relaxed font-medium">
+              <p className="text-lg text-gray-600 leading-relaxed font-medium fade-in-up-delay-2">
                 We're building the future of diagnostics smarter, faster, greener.
               </p>
             </div>
 
             {/* Key Features */}
-            <div className="flex flex-wrap gap-4">
-              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm">
+            <div className="flex flex-wrap gap-4 fade-in-up-delay-2">
+              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-2 h-2 bg-green-500 rounded-full"></div>
                 <span className="text-sm font-medium text-gray-700">Real-time Processing</span>
               </div>
-              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm">
+              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
                 <span className="text-sm font-medium text-gray-700">AI-Powered Analytics</span>
               </div>
-              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm">
+              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
                 <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                 <span className="text-sm font-medium text-gray-700">European Standards</span>
               </div>
@@ -57,18 +57,18 @@ const Hero = () => {
           </div>
 
           {/* Right Content - Modern Dashboard */}
-          <div className="relative">
+          <div className="relative fade-in-right">
             {/* Main Dashboard Container */}
-            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-2xl border border-gray-200">
+            <div className="bg-gradient-to-br from-gray-50 to-gray-100 rounded-3xl p-8 shadow-2xl border border-gray-200 hover:shadow-3xl transition-shadow duration-300">
               {/* Dashboard Header */}
               <div className="flex items-center justify-between mb-6">
                 <div className="flex items-center space-x-3">
-                  <div className="w-8 h-8 gradient-bg-blue rounded-lg flex items-center justify-center">
-                    <span className="text-white font-bold text-sm">VV</span>
+                  <div className="w-8 h-8 gradient-bg-blue-purple rounded-lg flex items-center justify-center">
+                    <span className="text-white font-bold text-sm">VR</span>
                   </div>
                   <div>
-                    <h3 className="font-bold text-gray-900">Virtus Vision</h3>
-                    <p className="text-xs text-gray-500">AI Analytics Platform</p>
+                    <h3 className="font-bold text-gray-900">Virtus R&D</h3>
+                    <p className="text-xs text-gray-500">Software Inc.</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-1">
@@ -136,15 +136,15 @@ const Hero = () => {
               
               {/* Stats Row */}
               <div className="grid grid-cols-3 gap-4 mt-6">
-                <div className="stat-card bg-white rounded-lg p-4 text-center">
+                <div className="stat-card bg-white rounded-lg p-4 text-center pulse-stats hover:bg-blue-50 transition-colors">
                   <div className="text-2xl font-bold text-primary-600">99.8%</div>
                   <div className="text-xs text-gray-500">Accuracy</div>
                 </div>
-                <div className="stat-card bg-white rounded-lg p-4 text-center">
+                <div className="stat-card bg-white rounded-lg p-4 text-center pulse-stats hover:bg-green-50 transition-colors">
                   <div className="text-2xl font-bold text-green-600">&lt;1s</div>
                   <div className="text-xs text-gray-500">Response</div>
                 </div>
-                <div className="stat-card bg-white rounded-lg p-4 text-center">
+                <div className="stat-card bg-white rounded-lg p-4 text-center pulse-stats hover:bg-purple-50 transition-colors">
                   <div className="text-2xl font-bold text-purple-600">24/7</div>
                   <div className="text-xs text-gray-500">Active</div>
                 </div>

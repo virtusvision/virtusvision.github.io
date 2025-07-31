@@ -75,18 +75,18 @@ const News = () => {
     <section id="news" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 fade-in-up">
             Latest News & Updates
           </h2>
         </div>
 
         {/* Featured News */}
         {featuredNews.length > 0 && (
-          <div className="mb-16">
-            <h3 className="text-2xl font-bold text-gray-900 mb-8">Featured Stories</h3>
+          <div className="mb-16 fade-in-up-delay-1">
+            <h3 className="text-2xl font-bold text-gray-900 mb-8 fade-in-up">Featured Stories</h3>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {featuredNews.map((news) => (
-                <article key={news.id} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
+              {featuredNews.map((news, index) => (
+                <article key={news.id} className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden card-hover ${index === 0 ? 'fade-in-up-delay-1' : 'fade-in-right'}`}>
                   <div className="p-8">
                     <div className="flex items-center justify-between mb-4">
                       <div className="flex items-center space-x-3">
@@ -124,11 +124,11 @@ const News = () => {
         )}
 
         {/* Regular News */}
-        <div>
-          <h3 className="text-2xl font-bold text-gray-900 mb-8">Recent Updates</h3>
+        <div className="fade-in-up-delay-2">
+          <h3 className="text-2xl font-bold text-gray-900 mb-8 fade-in-up">Recent Updates</h3>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {regularNews.map((news) => (
-              <article key={news.id} className="bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden">
+            {regularNews.map((news, index) => (
+              <article key={news.id} className={`bg-white rounded-xl shadow-sm hover:shadow-md transition-shadow duration-300 overflow-hidden card-hover ${index % 2 === 0 ? 'fade-in-up-delay-1' : 'fade-in-up-delay-2'}`}>
                 <div className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
                     <div className="text-2xl">{news.image}</div>

@@ -5,13 +5,13 @@ const Contact = () => {
     <section id="contact" className="py-20 bg-gray-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 fade-in-up">
             Contact
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto fade-in-up-delay-1">
             We'd love to hear from you!
           </p>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto mt-4">
+          <p className="text-lg text-gray-600 max-w-4xl mx-auto mt-4 fade-in-up-delay-2">
             Whether you are a healthcare professional, potential partner, investor, or student — feel free to get in touch.
           </p>
         </div>
@@ -19,7 +19,7 @@ const Contact = () => {
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div className="space-y-8">
+            <div className="space-y-8 fade-in-up-delay-1">
               <div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4 flex items-center">
                   <span className="text-2xl mr-3">🏢</span>
@@ -36,7 +36,7 @@ const Contact = () => {
                   Email:
                 </h3>
                 <p className="text-gray-600 ml-11">
-                  info@virtusvision.ai
+                  info@virtusrnd.com
                 </p>
               </div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
                   Website:
                 </h3>
                 <p className="text-gray-600 ml-11">
-                  www.virtusvision.ai
+                  www.virtusrnd.com
                 </p>
               </div>
 
@@ -62,8 +62,8 @@ const Contact = () => {
             </div>
 
             {/* Contact Form */}
-            <div className="bg-white rounded-2xl shadow-lg p-8">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Get in Touch</h3>
+            <div className="bg-white rounded-2xl shadow-lg p-8 card-hover fade-in-right">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 fade-in-up">Get in Touch</h3>
               <form className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

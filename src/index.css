@@ -16,6 +16,11 @@ body {
   line-height: 1.6;
 }
 
+/* Remove underlines from all links by default */
+a {
+  text-decoration: none;
+}
+
 /* Utility Classes */
 .container {
   max-width: 1200px;
@@ -162,11 +167,40 @@ body {
 }
 
 .bg-primary-600 {
-  background-color: #2563eb;
+  background-color: #3b82f6;
 }
 
 .bg-primary-700 {
-  background-color: #1d4ed8;
+  background-color: #2563eb;
+}
+
+.text-primary-600 {
+  color: #3b82f6;
+}
+
+.text-primary-700 {
+  color: #2563eb;
+}
+
+.text-teal-500 {
+  color: #14b8a6;
+}
+
+.text-teal-600 {
+  color: #0d9488;
+}
+
+/* Modern Gradient Backgrounds */
+.gradient-bg-modern {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.gradient-bg-blue-purple {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+}
+
+.gradient-bg-ocean {
+  background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 50%, #6366f1 100%);
 }
 
 .bg-blue-600 {
@@ -1005,6 +1039,24 @@ button:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* Remove underlines from navigation links */
+nav a {
+  text-decoration: none !important;
+}
+
+nav a:hover {
+  text-decoration: none !important;
+}
+
+/* Remove underlines from footer links */
+footer a {
+  text-decoration: none !important;
+}
+
+footer a:hover {
+  text-decoration: none !important;
+}
+
 /* Stats Section */
 .stat-card {
   position: relative;
@@ -1088,6 +1140,68 @@ button:hover {
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
+}
+
+/* Hero Section Animations */
+.fade-in-up {
+  animation: fadeInUp 0.8s ease-out forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in-up-delay-1 {
+  animation: fadeInUp 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in-up-delay-2 {
+  animation: fadeInUp 0.8s ease-out 0.4s forwards;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-out 0.6s forwards;
+  opacity: 0;
+  transform: translateX(50px);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Pulse Animation for Stats */
+.pulse-stats {
+  animation: pulseStats 2s ease-in-out infinite;
+}
+
+@keyframes pulseStats {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+/* Enhanced Shadows */
+.shadow-3xl {
+  box-shadow: 0 35px 60px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Gradient Text Effect */
+.gradient-text {
+  background: linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 /* Text Effects */
@@ -1205,4 +1319,210 @@ button:hover {
   .lg\:col-span-6 {
     grid-column: span 6 / span 6;
   }
+}
+
+
+
+/* YENİ MODERN KART TASARIMI - HOVER TOOLTIP TASARIMINI KARTLARA UYGULADI */
+
+/* Student Cards - Modern Background Design */
+.student-card-modern {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  border: 3px solid white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.student-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.student-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 100%);
+  border-radius: 13px;
+}
+
+.student-card-modern .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px;
+  color: white;
+  z-index: 10;
+  text-align: center;
+}
+
+.student-card-modern .student-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.student-card-modern .student-role {
+  font-size: 12px;
+  color: #93c5fd;
+  font-weight: 600;
+  margin-bottom: 4px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.student-card-modern .student-university {
+  font-size: 10px;
+  color: #d1d5db;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Leadership Cards - Modern Background Design */
+.leadership-card-modern {
+  position: relative;
+  width: 100%;
+  height: 280px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  border: 3px solid white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.leadership-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+  border-radius: 13px;
+}
+
+.leadership-card-modern .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+  z-index: 10;
+  text-align: center;
+}
+
+.leadership-card-modern .leadership-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.leadership-card-modern .leadership-role {
+  font-size: 14px;
+  color: #93c5fd;
+  font-weight: 600;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.leadership-card-modern .leadership-university {
+  font-size: 12px;
+  color: #d1d5db;
+  margin-bottom: 12px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.leadership-card-modern .leadership-expertise {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  justify-content: center;
+}
+
+.leadership-card-modern .expertise-tag {
+  background: rgba(255,255,255,0.2);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 10px;
+  font-weight: 500;
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(255,255,255,0.3);
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Advisory Cards - Modern Background Design */
+.advisory-card-modern {
+  position: relative;
+  width: 100%;
+  height: 240px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 16px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+  border: 3px solid white;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.advisory-card-modern:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.advisory-card-modern::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 100%);
+  border-radius: 13px;
+}
+
+.advisory-card-modern .card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  color: white;
+  z-index: 10;
+  text-align: center;
+}
+
+.advisory-card-modern .advisory-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
+}
+
+.advisory-card-modern .advisory-role {
+  font-size: 12px;
+  color: #93c5fd;
+  font-weight: 600;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.8);
 }

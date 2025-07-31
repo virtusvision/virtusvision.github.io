@@ -57,13 +57,6 @@ const Header = () => {
             </Link>
           </nav>
 
-          {/* CTA Button */}
-          <div className="hidden md:block">
-            <button className="bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors">
-              Get Started
-            </button>
-          </div>
-
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button
@@ -105,9 +98,6 @@ const Header = () => {
               <Link to="/contact" className="block px-3 py-2 text-gray-700 hover:text-primary-600">
                 Contact
               </Link>
-              <button className="w-full mt-2 bg-primary-600 text-white px-6 py-2 rounded-lg hover:bg-primary-700 transition-colors">
-                Get Started
-              </button>
             </div>
           </div>
         )}

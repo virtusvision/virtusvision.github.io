@@ -5,19 +5,19 @@ const About = () => {
     <section id="about" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 fade-in-up">
             About Virtus Vision
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto fade-in-up-delay-1">
             Pioneering the future of mobile medical diagnostics through innovative AI solutions.
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
-          <div className="space-y-8">
+          <div className="space-y-8 fade-in-up-delay-1">
             <div className="space-y-6">
-              <h3 className="text-2xl font-bold text-gray-900">
+              <h3 className="text-2xl font-bold text-gray-900 fade-in-up">
                 About Virtus R&D Software Inc.
               </h3>
               <p className="text-gray-600 leading-relaxed">
@@ -75,14 +75,24 @@ const About = () => {
           </div>
 
           {/* Right Content - Team & Values */}
-          <div className="space-y-8">
+          <div className="space-y-8 fade-in-right">
             {/* Leadership Section */}
-            <div className="bg-gray-50 rounded-2xl p-8">
-              <h3 className="text-xl font-bold text-gray-900 mb-6">Leadership Team</h3>
+            <div className="bg-gray-50 rounded-2xl p-8 card-hover">
+              <h3 className="text-xl font-bold text-gray-900 mb-6 fade-in-up">Leadership Team</h3>
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center">
-                    <span className="text-black">ZH</span>
+                  <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/team/zeynep-eren.jpg" 
+                      alt="Zeynep Filiz Eren"
+                      className="w-full h-full object-cover"
+                      style={{transform: 'scale(1.5)'}}
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <span className="text-white font-bold hidden">ZE</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Zeynep Filiz Eren</h4>
@@ -92,8 +102,18 @@ const About = () => {
                 </div>
 
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
-                    <span className="text-black">AH</span>
+                  <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center overflow-hidden">
+                    <img 
+                      src="/team/hasan-ozkan.jpg" 
+                      alt="Hasan Ali Özkan"
+                      className="w-full h-full object-cover"
+                      style={{transform: 'scale(1.5)'}}
+                      onError={(e) => {
+                        e.target.style.display = 'none';
+                        e.target.nextSibling.style.display = 'flex';
+                      }}
+                    />
+                    <span className="text-white font-bold hidden">HO</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Hasan Ali Özkan</h4>
@@ -105,7 +125,7 @@ const About = () => {
             </div>
 
             {/* Mission Statement */}
-            <div className="bg-primary-50 rounded-2xl p-8">
+            <div className="bg-primary-50 rounded-2xl p-8 card-hover">
               <h3 className="text-xl font-bold text-primary-900 mb-4">Our Mission</h3>
               <p className="text-primary-800 leading-relaxed">
                Modernize outdated diagnostic workflows by replacing manual, contact-based methods with AI-powered, ethical, and eco-conscious alternatives.

@@ -42,17 +42,17 @@ const RD = () => {
     <section id="rd" className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 fade-in-up">
             R&D Projects
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto fade-in-up-delay-1">
             Pioneering research and development in medical imaging and AI diagnostics
           </p>
         </div>
 
         <div className="space-y-8">
-          {projects.map((project) => (
-            <div key={project.id} className="bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300">
+          {projects.map((project, index) => (
+            <div key={project.id} className={`bg-gray-50 rounded-2xl p-8 hover:shadow-lg transition-shadow duration-300 card-hover ${index === 0 ? 'fade-in-up-delay-1' : index === 1 ? 'fade-in-up-delay-2' : 'fade-in-right'}`}>
               <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-6">
                 <div className="lg:flex-1 lg:pr-8">
                   <div className="flex items-center space-x-4 mb-4">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   return (
@@ -11,30 +12,30 @@ const Footer = () => {
               Pioneering the future of mobile medical diagnostics through innovative AI solutions that empower healthcare professionals.
             </p>
             <div className="space-y-2 text-sm text-gray-300">
-              <div>📧 info@virtusvision.ai</div>
+              <div>📧 info@virtusrnd.com</div>
               <div>🏢 Muğla Teknokent, 48000, Kötekli, Muğla, Türkiye</div>
-              <div>🌐 www.virtusvision.ai</div>
+              <div>🌐 www.virtusrnd.com</div>
             </div>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Solutions</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#services" className="hover:text-white">Allergy Testing</a></li>
-              <li><a href="#services" className="hover:text-white">Ptosis Assessment</a></li>
-              <li><a href="#services" className="hover:text-white">Medical Imaging</a></li>
-              <li><a href="#rd" className="hover:text-white">R&D Projects</a></li>
+              <li><Link to="/solutions" className="hover:text-white">Allergy Testing</Link></li>
+              <li><Link to="/solutions" className="hover:text-white">Ptosis Assessment</Link></li>
+              <li><Link to="/solutions" className="hover:text-white">Medical Imaging</Link></li>
+              <li><Link to="/rd" className="hover:text-white">R&D Projects</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><a href="#about" className="hover:text-white">About</a></li>
-              <li><a href="#team" className="hover:text-white">Team</a></li>
-              <li><a href="#news" className="hover:text-white">News</a></li>
-              <li><a href="#careers" className="hover:text-white">Careers</a></li>
-              <li><a href="#contact" className="hover:text-white">Contact</a></li>
+              <li><Link to="/about" className="hover:text-white">About</Link></li>
+              <li><Link to="/team" className="hover:text-white">Team</Link></li>
+              <li><Link to="/news" className="hover:text-white">News</Link></li>
+              <li><Link to="/careers" className="hover:text-white">Careers</Link></li>
+              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
         </div>
