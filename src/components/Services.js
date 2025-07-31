@@ -65,9 +65,7 @@ const Services = () => {
 
                   {/* CTA Button */}
                   <div className="mt-6">
-                    <button className="w-full bg-gray-100 text-gray-700 py-3 px-4 rounded-lg font-medium hover:bg-gray-200 transition-colors">
-                      Learn More
-                    </button>
+                    
                   </div>
                 </div>
               </div>
@@ -82,25 +80,7 @@ const Services = () => {
         </div>
 
         {/* Bottom CTA Section */}
-        <div className="mt-16 text-center">
-          <div className="bg-primary-600 rounded-2xl p-8 lg:p-12 text-white">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Ready to Transform Your Business?
-            </h3>
-            <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
-              Join over 50 European companies already leveraging our computer vision technology 
-              to drive innovation and increase efficiency.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button className="bg-white text-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                Schedule Consultation
-              </button>
-              <button className="border border-primary-300 text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                Download Brochure
-              </button>
-            </div>
-          </div>
-        </div>
+        
       </div>
     </section>
   );

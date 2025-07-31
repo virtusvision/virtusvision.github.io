@@ -161,39 +161,10 @@ const News = () => {
         </div>
 
         {/* Newsletter Signup */}
-        <div className="mt-12">
-          <div className="bg-primary-600 rounded-2xl p-8 lg:p-12 text-center text-white">
-            <h3 className="text-2xl lg:text-3xl font-bold mb-4">
-              Stay Ahead of the Curve
-            </h3>
-            <p className="text-primary-100 mb-8 max-w-2xl mx-auto">
-              Subscribe to our newsletter for the latest insights, product updates, 
-              and industry trends in computer vision and AI.
-            </p>
-            <div className="max-w-md mx-auto">
-              <div className="flex flex-col sm:flex-row gap-4">
-                <input
-                  type="email"
-                  placeholder="Enter your email address"
-                  className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-white"
-                />
-                <button className="bg-white text-primary-600 px-6 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-                  Subscribe
-                </button>
-              </div>
-              <p className="text-primary-200 text-sm mt-3">
-                We respect your privacy. Unsubscribe at any time.
-              </p>
-            </div>
-          </div>
-        </div>
+        
 
         {/* View All News Button */}
-        <div className="text-center mt-12">
-          <button className="bg-white text-primary-600 border border-primary-600 px-8 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
-            View All News & Articles
-          </button>
-        </div>
+        
       </div>
     </section>
   );

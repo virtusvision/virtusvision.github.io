@@ -18,13 +18,13 @@ const About = () => {
           <div className="space-y-8">
             <div className="space-y-6">
               <h3 className="text-2xl font-bold text-gray-900">
-                About VirtusVision.ai
+                About Virtus R&D Software Inc.
               </h3>
               <p className="text-gray-600 leading-relaxed">
-                Founded in Türkiye by academic researchers, VirtusVision.ai is a woman-led deep tech startup creating medical imaging solutions that empower healthcare professionals.
+                Founded in Türkiye by academic researchers, Virtus R&D Software Inc. is a woman-led deep tech startup creating medical imaging solutions that empower healthcare professionals.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                We build mobile diagnostic tools in areas that lack standard, scalable, and digital solutions — such as allergy tests, eye assessments, orthopedics, skin conditions, and facial symmetry analysis.
+                We build mobile diagnostic tools in areas that lack standard, scalable, and digital solutions, such as allergy tests, eye assessments, orthopedics, skin conditions, and facial symmetry analysis.
               </p>
               <p className="text-gray-600 leading-relaxed">
                 Our mission is to modernize outdated diagnostic workflows by replacing manual, contact-based methods with AI-powered, ethical, and eco-conscious alternatives.
@@ -82,7 +82,7 @@ const About = () => {
               <div className="space-y-6">
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-primary-500 to-primary-700 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">ZH</span>
+                    <span className="text-black">ZH</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Zeynep Filiz Eren</h4>
@@ -93,7 +93,7 @@ const About = () => {
 
                 <div className="flex items-center space-x-4">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-700 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold text-xl">AH</span>
+                    <span className="text-black">AH</span>
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Hasan Ali Özkan</h4>

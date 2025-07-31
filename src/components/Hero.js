@@ -13,13 +13,13 @@ const Hero = () => {
                 <span className="text-primary-600 gradient-text"> Medical Diagnostics</span>
               </h1>
               <p className="text-xl text-gray-600 leading-relaxed">
-                Turning images into insights — with mobile, AI-powered healthcare tools.
+                Turning images into insights with mobile, AI-powered healthcare tools.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                VirtusVision.ai develops contactless, image-based medical diagnostic tools using LiDAR, computer vision, and AI. Our first solution modernizes allergy testing with a touchless mobile app.
+                Virtus R&D Software Inc. develops contactless, image-based medical diagnostic tools using LiDAR, computer vision, and AI. Our first solution modernizes allergy testing with a touchless mobile app.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed font-medium">
-                We're building the future of diagnostics — smarter, faster, greener.
+                We're building the future of diagnostics smarter, faster, greener.
               </p>
             </div>
 
@@ -37,16 +37,6 @@ const Hero = () => {
                 <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
                 <span className="text-sm font-medium text-gray-700">European Standards</span>
               </div>
-            </div>
-
-            {/* CTA Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary bg-primary-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-primary-700 transition-colors">
-                Explore Solutions
-              </button>
-              <button className="btn-secondary border border-gray-300 text-gray-700 px-8 py-4 rounded-lg font-semibold hover:bg-gray-50 transition-colors">
-                Watch Demo
-              </button>
             </div>
 
             {/* Stats */}
@@ -93,53 +83,53 @@ const Hero = () => {
                   <div className="terminal-dot dot-red"></div>
                   <div className="terminal-dot dot-yellow"></div>
                   <div className="terminal-dot dot-green"></div>
-                  <span className="text-gray-400 text-xs ml-3">Vision Analytics Dashboard</span>
+                  <span className="text-white text-xs ml-3">Vision Analytics Dashboard</span>
                 </div>
                 
                 <div className="p-4 space-y-3 text-sm">
                   <div className="flex items-center space-x-2">
                     <span className="text-green-400">✓</span>
-                    <span className="text-gray-300">Initializing vision model...</span>
-                    <span className="text-green-400 ml-auto">200ms</span>
+                    <span className="text-white">Initializing vision model...</span>
+                    <span className="text-gray-400">200ms</span>
                   </div>
                   
                   <div className="flex items-center space-x-2">
                     <span className="text-green-400">✓</span>
-                    <span className="text-gray-300">Loading neural network weights...</span>
-                    <span className="text-green-400 ml-auto">450ms</span>
+                    <span className="text-white">Loading neural network weights...</span>
+                    <span className="text-gray-400">450ms</span>
                   </div>
                   
                   <div className="flex items-center space-x-2">
                     <span className="text-blue-400">⚡</span>
-                    <span className="text-gray-300">Processing image data...</span>
-                    <span className="text-blue-400 ml-auto">Real-time</span>
+                    <span className="text-white">Processing image data...</span>
+                    <span className="text-gray-400">Real-time</span>
                   </div>
                   
                   <div className="bg-blue-900 bg-opacity-30 rounded-lg p-3 my-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-blue-300">🎯 Object Detection</span>
-                      <span className="text-blue-300 font-bold">97.3%</span>
+                      <span className="text-white">🎯 Object Detection</span>
+                      <span className="text-gray-400">97.3%</span>
                     </div>
-                    <div className="text-xs text-blue-200 mt-1">Person detected in frame</div>
+                    <div className="text-xs text-white mt-1">Person detected in frame</div>
                   </div>
                   
                   <div className="bg-yellow-900 bg-opacity-30 rounded-lg p-3 my-3">
                     <div className="flex items-center justify-between">
-                      <span className="text-yellow-300">🚗 Motion Analysis</span>
-                      <span className="text-yellow-300 font-bold">94.1%</span>
+                      <span className="text-white">🚗 Motion Analysis</span>
+                      <span className="text-gray-400">94.1%</span>
                     </div>
-                    <div className="text-xs text-yellow-200 mt-1">Vehicle movement tracked</div>
+                    <div className="text-xs text-white mt-1">Vehicle movement tracked</div>
                   </div>
                   
                   <div className="flex items-center space-x-2">
                     <span className="text-green-400">✅</span>
-                    <span className="text-green-300">Analysis complete</span>
-                    <span className="text-green-400 ml-auto">Total: 1.2s</span>
+                    <span className="text-white">Analysis complete</span>
+                    <span className="text-gray-400">Total: 1.2s</span>
                   </div>
                   
                   <div className="flex items-center space-x-2 animate-pulse">
                     <span className="text-purple-400">⟳</span>
-                    <span className="text-purple-300">Ready for next frame...</span>
+                    <span className="text-white">Ready for next frame...</span>
                   </div>
                 </div>
               </div>

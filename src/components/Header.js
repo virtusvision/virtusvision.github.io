@@ -37,10 +37,10 @@ const Header = () => {
             <Link to="/about" className="text-gray-700 hover:text-primary-600 transition-colors">
               About
             </Link>
-            <Link to="/services" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/solutions" className="text-gray-700 hover:text-primary-600 transition-colors">
               Solutions
             </Link>
-            <Link to="/projects" className="text-gray-700 hover:text-primary-600 transition-colors">
+            <Link to="/rd" className="text-gray-700 hover:text-primary-600 transition-colors">
               R&D
             </Link>
             <Link to="/news" className="text-gray-700 hover:text-primary-600 transition-colors">
@@ -87,10 +87,10 @@ const Header = () => {
               <Link to="/about" className="block px-3 py-2 text-gray-700 hover:text-primary-600">
                 About
               </Link>
-              <Link to="/services" className="block px-3 py-2 text-gray-700 hover:text-primary-600">
+              <Link to="/solutions" className="block px-3 py-2 text-gray-700 hover:text-primary-600">
                 Solutions
               </Link>
-              <Link to="/projects" className="block px-3 py-2 text-gray-700 hover:text-primary-600">
+              <Link to="/rd" className="block px-3 py-2 text-gray-700 hover:text-primary-600">
                 R&D
               </Link>
               <Link to="/news" className="block px-3 py-2 text-gray-700 hover:text-primary-600">

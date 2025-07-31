@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
@@ -20,12 +20,16 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<AboutPage />} />
-            <Route path="/services" element={<ServicesPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
+            <Route path="/solutions" element={<ServicesPage />} />
+            <Route path="/rd" element={<ProjectsPage />} />
             <Route path="/news" element={<NewsPage />} />
             <Route path="/team" element={<TeamPage />} />
             <Route path="/careers" element={<CareersPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            
+            {/* Redirect old routes to new ones */}
+            <Route path="/services" element={<Navigate to="/solutions" replace />} />
+            <Route path="/projects" element={<Navigate to="/rd" replace />} />
           </Routes>
         </main>
         <Footer />
