@@ -96,7 +96,7 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Zeynep Filiz Eren</h4>
-                    <p className="text-primary-600">CEO & Founder</p>
+                    <p className="text-primary-600">CEO & Co-founder</p>
                     <p className="text-sm text-gray-600">Computer Vision Expert</p>
                   </div>
                 </div>
@@ -117,8 +117,8 @@ const About = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-gray-900">Hasan Ali Özkan</h4>
-                    <p className="text-blue-600">CTO</p>
-                    <p className="text-sm text-gray-600">AI & Machine Learning Lead</p>
+                    <p className="text-blue-600">CTO & Co-founder</p>
+                    <p className="text-sm text-gray-600">Technical Visionary & Product Development</p>
                   </div>
                 </div>
               </div>

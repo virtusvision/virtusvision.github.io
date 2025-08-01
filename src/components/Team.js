@@ -19,7 +19,7 @@ const Team = () => {
       role2: "Virtus R&D Software Inc.",
       description: "Research Assist.",
       university: "Muğla Sıtkı Koçman University",
-      expertise: ["Medical Imaging", "Software Architecture", "Computer Engineering", "Development"],
+      expertise: ["Computer Vision", "Software Architecture", "Computer Engineering", "Image Processing"],
       image: "/team/hasan-ozkan.jpg"
     }
   ];

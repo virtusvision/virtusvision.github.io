@@ -21,21 +21,21 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold mb-4">Solutions</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="/solutions" className="hover:text-white">Allergy Testing</Link></li>
-              <li><Link to="/solutions" className="hover:text-white">Ptosis Assessment</Link></li>
-              <li><Link to="/solutions" className="hover:text-white">Medical Imaging</Link></li>
-              <li><Link to="/rd" className="hover:text-white">R&D Projects</Link></li>
+              <li><Link to="/solutions" className="text-white hover:text-cyan-400">Allergy Testing</Link></li>
+              <li><Link to="/solutions" className="text-white hover:text-cyan-400">Ptosis Assessment</Link></li>
+              <li><Link to="/solutions" className="text-white hover:text-cyan-400">Medical Imaging</Link></li>
+              <li><Link to="/rd" className="text-white hover:text-cyan-400">R&D Projects</Link></li>
             </ul>
           </div>
           
           <div>
             <h4 className="font-semibold mb-4">Company</h4>
             <ul className="space-y-2 text-gray-300">
-              <li><Link to="/about" className="hover:text-white">About</Link></li>
-              <li><Link to="/team" className="hover:text-white">Team</Link></li>
-              <li><Link to="/news" className="hover:text-white">News</Link></li>
-              <li><Link to="/careers" className="hover:text-white">Careers</Link></li>
-              <li><Link to="/contact" className="hover:text-white">Contact</Link></li>
+              <li><Link to="/about" className="text-white hover:text-cyan-400">About</Link></li>
+              <li><Link to="/team" className="text-white hover:text-cyan-400">Team</Link></li>
+              <li><Link to="/news" className="text-white hover:text-cyan-400">News</Link></li>
+              <li><Link to="/careers" className="text-white hover:text-cyan-400">Careers</Link></li>
+              <li><Link to="/contact" className="text-white hover:text-cyan-400">Contact</Link></li>
             </ul>
           </div>
         </div>

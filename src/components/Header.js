@@ -12,7 +12,7 @@ const Header = () => {
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
               <img 
-                src="/logo.png" 
+                src="/virtuslogo.png" 
                 alt="Virtus R&D Software Inc." 
                 className="h-20 w-20 max-h-8 max-w-8 object-contain flex-shrink-0"
                 style={{ maxHeight: '50px', maxWidth: '50px' }}
@@ -24,7 +24,7 @@ const Header = () => {
               <span className="text-2xl font-bold text-primary-700 hidden">Virtus Vision</span>
               <div className="text-lg font-bold text-primary-700 whitespace-nowrap">
                 <span className="text-teal-600">Virtus R&D</span>
-                <span className="text-gray-700 ml-2">Software Inc.</span>
+                <span className="text-gray-700 ml-2"> Software Inc.</span>
               </div>
             </Link>
           </div>
