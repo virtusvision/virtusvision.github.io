@@ -28,7 +28,7 @@ const News = () => {
       id: 5,
       type: 'Academic Collaboration',
       title: 'University SRP Project Completed',
-      excerpt: 'Bursa Uludag University-funded SRP (BAP) project has been successfully completed through strong academic–clinical collaboration.',
+      excerpt: 'Bursa Uludag University-funded SRP  project has been successfully completed through strong academic–clinical collaboration.',
       date: '2024-01-09',
       featured: true,
       category: 'Technology',
@@ -71,8 +71,8 @@ const News = () => {
     {
       id: 7,
       type: 'Grants',
-      title: 'BAP Application Accepted',
-      excerpt: 'Our university BAP program proposal has been accepted to accelerate our research and development roadmap.',
+      title: 'SRP Application Accepted',
+      excerpt: 'Bursa Uludağ University SRP program proposal has been accepted to accelerate our research and development roadmap.',
       date: '2024-01-04',
       readTime: '1 min read',
       featured: false,
@@ -111,7 +111,7 @@ const News = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 fade-in-up">
-            <span className="inline-block border border-gray-300 rounded-md px-2 py-0.5 mr-2">Latest</span>
+            
             News & Updates
           </h2>
         </div>
@@ -120,8 +120,8 @@ const News = () => {
         {featuredNews.length > 0 && (
           <div className="mb-16 fade-in-up-delay-1">
             <div className="mb-8 flex items-baseline gap-3 fade-in-up">
-              <span className="text-2xl font-bold text-gray-900">Featured Stories</span>
-              <span className="text-2xl text-gray-500">Latest News</span>
+              <span className="text-2xl font-bold text-gray-900">Latest News</span>
+              
             </div>
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               {featuredNews.map((news, index) => (

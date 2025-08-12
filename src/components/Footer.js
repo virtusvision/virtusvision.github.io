@@ -12,9 +12,9 @@ const Footer = () => {
               Pioneering the future of mobile medical diagnostics through innovative AI solutions that empower healthcare professionals.
             </p>
             <div className="space-y-2 text-sm text-gray-300">
-              <div>📧 info@virtusrnd.com</div>
+              <div>📧 <a href="mailto:info@virtusrnd.com" className="text-white hover:underline">info@virtusrnd.com</a></div>
               <div>🏢 Muğla Teknokent, 48000, Kötekli, Muğla, Türkiye</div>
-              <div>🌐 www.virtusrnd.com</div>
+              <div>🌐 <a href="http://www.virtusrnd.com" className="text-white hover:underline">www.virtusrnd.com</a></div>
             </div>
           </div>
           

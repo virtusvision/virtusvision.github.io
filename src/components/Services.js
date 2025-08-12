@@ -98,7 +98,7 @@ const Services = () => {
         </div>
 
         <div className="text-center mb-12">
-          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+          <p className="text-2xl text-gray-600 max-w-3xl mx-auto">
             We combine AI, 2D/3D image analysis, and ethical data storage in every solution we build.
           </p>
         </div>

@@ -103,17 +103,21 @@ const About = () => {
             </div>
 
             {/* Partners Section */}
-            <div className="bg-white rounded-2xl p-8 border card-hover">
-              <h3 className="text-xl font-bold text-gray-900 mb-4">Partners</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                <div className="rounded-lg border p-4 text-center bg-gray-50">Muğla Sıtkı Koçman Üniversitesi</div>
-                <div className="rounded-lg border p-4 text-center bg-gray-50">KOSGEB</div>
-                <div className="rounded-lg border p-4 text-center bg-gray-50">BAP</div>
-              </div>
-            </div>
+       
             
           </div>
         </div>
+             <div className="bg-white  p-8  mt-16 card-hover">
+              <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Partners</h3>
+              <div className="flex flex-row justify-center items-center space-x-8">
+                <img src="/uutf.png" alt="UUTF" className="" style={{ width: '160px', height: '160px', minWidth: '160px', minHeight: '160px', maxWidth: '160px', maxHeight: '160px' }} />
+                <img src="/uubap.png" alt="UUBAP" className="" style={{ width: '160px', height: '160px', minWidth: '160px', minHeight: '160px', maxWidth: '160px', maxHeight: '160px' }} />
+                <img src="/mskü.jpg" alt="MSKÜ" className="" style={{ width: '160px', height: '160px', minWidth: '160px', minHeight: '160px', maxWidth: '160px', maxHeight: '160px' }} />
+                <img src="/teknopark.jpeg" alt="Teknopark" className="" style={{ width: '160px', height: '160px', minWidth: '160px', minHeight: '160px', maxWidth: '160px', maxHeight: '160px' }} />
+                <img src="/kosgeb.jpg" alt="KOSGEB" className="" style={{ width: '160px', height: '160px', minWidth: '160px', minHeight: '160px', maxWidth: '160px', maxHeight: '160px' }} />
+
+              </div>
+            </div>
       </div>
     </section>
   );

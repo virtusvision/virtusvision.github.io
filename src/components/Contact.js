@@ -55,16 +55,27 @@ const Contact = () => {
                   <span className="text-2xl mr-3">📱</span>
                   Social Media:
                 </h3>
-                <p className="text-gray-600 ml-11">
-                  [LinkedIn], [Twitter/X], [Instagram] (Link placeholders — to be updated)
-                </p>
+                <div className="text-gray-600 ml-11">
+                  <div className="flex flex-row items-center space-x-4">
+                   
+                   <a href="https://www.linkedin.com/company/virtusrnd" target="_blank" rel="noopener noreferrer">
+                     <img src="linkedin-svgrepo-com.svg" alt="LinkedIn" className="w-6 h-6" />
+                   </a>
+                   <a href="https://www.instagram.com/virtusrnd" target="_blank" rel="noopener noreferrer">
+                     <img src="instagram-1-svgrepo-com.svg" alt="Instagram" className="w-6 h-6" />
+                   </a>
+                   <a href="https://www.youtube.com/@virtusrnd" target="_blank" rel="noopener noreferrer">
+                     <img src="youtube-color-svgrepo-com.svg" alt="YouTube" className="w-6 h-6" />
+                   </a>
+                  </div>
+                </div>
               </div>
             </div>
 
             {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-lg p-8 card-hover fade-in-right">
               <h3 className="text-2xl font-bold text-gray-900 mb-6 fade-in-up">Get in Touch</h3>
-              <form className="space-y-6">
+              <form action="mailto:info@virtusrnd.com" className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
                     Full Name
