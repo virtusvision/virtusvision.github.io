@@ -4,9 +4,13 @@ import { Link } from 'react-router-dom';
 const Careers = () => {
   const opportunities = [
     "AI & Computer Vision Researchers",
-    "Medical Imaging Specialists", 
-    "Frontend & Mobile Developers",
-    "Clinical Trial Coordinators",
+    
+    "Medical Professionals & Clinical Advisors",
+    
+    "Mobile Developer",
+    "Full Stack Developer",
+    
+    "Marketing & Business Development Experts",
     "Students interested in healthcare innovation"
   ];
 
@@ -25,7 +29,7 @@ const Careers = () => {
         <div className="max-w-4xl mx-auto">
           <div className="bg-gray-50 rounded-2xl p-8 lg:p-12 mb-12 card-hover fade-in-up-delay-1">
             <p className="text-lg text-gray-600 leading-relaxed mb-8 fade-in-up">
-              We are always on the lookout for passionate, curious, and driven individuals who want to shape the future of healthcare.
+              We're always looking for passionate, curious, and driven individuals eager to shape the future of healthcare.
             </p>
 
             <div className="mb-8 fade-in-up-delay-1">

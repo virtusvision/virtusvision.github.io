@@ -12,9 +12,11 @@ const Hero = () => {
                 Reimagining
                 <span className="text-primary-600 gradient-text"> Medical Diagnostics</span>
               </h1>
-              <p className="text-xl text-gray-600 leading-relaxed fade-in-up-delay-1">
-                Turning images into insights with mobile, AI-powered healthcare tools.
-              </p>
+              <div className="inline-block bg-white/80 backdrop-blur border border-gray-200 rounded-xl shadow-md px-4 py-3 fade-in-up-delay-1">
+                <p className="text-base lg:text-lg text-gray-700 font-medium">
+                  Turning images into insights with mobile, AI-powered healthcare tools.
+                </p>
+              </div>
               <p className="text-lg text-gray-600 leading-relaxed fade-in-up-delay-2">
                 Virtus R&D Software Inc. develops contactless, image-based medical diagnostic tools using LiDAR, computer vision, and AI. Our first solution modernizes allergy testing with a touchless mobile app.
               </p>
@@ -23,37 +25,7 @@ const Hero = () => {
               </p>
             </div>
 
-            {/* Key Features */}
-            <div className="flex flex-wrap gap-4 fade-in-up-delay-2">
-              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">Real-time Processing</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">AI-Powered Analytics</span>
-              </div>
-              <div className="flex items-center space-x-2 bg-white px-4 py-2 rounded-full shadow-sm hover:shadow-md transition-shadow">
-                <div className="w-2 h-2 bg-purple-500 rounded-full"></div>
-                <span className="text-sm font-medium text-gray-700">European Standards</span>
-              </div>
-            </div>
-
-            {/* Stats */}
-            <div className="grid grid-cols-3 gap-6 pt-8">
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">99.8%</div>
-                <div className="text-sm text-gray-600">Accuracy Rate</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">50+</div>
-                <div className="text-sm text-gray-600">Enterprise Clients</div>
-              </div>
-              <div className="text-center">
-                <div className="text-2xl font-bold text-primary-600">24/7</div>
-                <div className="text-sm text-gray-600">Monitoring</div>
-              </div>
-            </div>
+            {/* Removed feature chips and left-side stats per design */}
           </div>
 
           {/* Right Content - Modern Dashboard */}
@@ -88,13 +60,13 @@ const Hero = () => {
                 
                 <div className="p-4 space-y-3 text-sm">
                   <div className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-white">✓</span>
                     <span className="text-white">Initializing vision model...</span>
                     <span className="text-gray-400">200ms</span>
                   </div>
                   
                   <div className="flex items-center space-x-2">
-                    <span className="text-green-400">✓</span>
+                    <span className="text-white">✓</span>
                     <span className="text-white">Loading neural network weights...</span>
                     <span className="text-gray-400">450ms</span>
                   </div>

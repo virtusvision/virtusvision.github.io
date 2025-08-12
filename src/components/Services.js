@@ -3,19 +3,43 @@ import React from 'react';
 const Services = () => {
   const solutions = [
     {
-      title: "Allergy Testing",
-      description: "Touchless, LiDAR-enhanced skin prick test analysis",
-      features: ["Contactless measurement", "Real-time analysis", "Probabilistic results", "Clinical validation"]
+      title: "Skin Testing & Dermatology",
+      description: "AI-assisted evaluation of skin health and conditions",
+      features: [
+        "Lesion analysis",
+        "Inflammation",
+        "Pigmentation tracking",
+        "Skin-visible systemic conditions"
+      ]
     },
     {
-      title: "Eyelid Ptosis Assessment", 
-      description: "Ongoing project for image-based pre-surgical evaluation",
-      features: ["Pre-surgical planning", "Standardized evaluation", "Contactless assessment", "Clinical decision support"]
+      title: "Facial & Eye Diagnostics",
+      description: "Computer vision tools for facial and periocular assessment",
+      features: [
+        "Facial symmetry",
+        "Skin texture",
+        "Proportional balance",
+        "Eye aesthetics",
+        "Ptosis diagnosis"
+      ]
     },
     {
-      title: "Visual Medical Imaging Tools",
-      description: "Targeting aesthetic, orthopedic, and dermatological evaluations",
-      features: ["Aesthetic analysis", "Orthopedic assessment", "Dermatological screening", "Symmetry analysis"]
+      title: "Orthopedy & Physiotherapy",
+      description: "Posture and movement analysis from video",
+      features: [
+        "Posture alignment",
+        "Limb alignment",
+        "Motion tracking"
+      ]
+    },
+    {
+      title: "Orthodontics & Jaw Assessment",
+      description: "Dental-facial analysis for treatment support",
+      features: [
+        "Jaw symmetry",
+        "Treatment monitoring",
+        "Jaw positioning issues"
+      ]
     }
   ];
 

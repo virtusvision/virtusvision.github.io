@@ -4,21 +4,21 @@ const RD = () => {
   const projects = [
     {
       id: 1,
-      title: "Allergy Test Automation",
+      title: "Allergy Diagnosis App",
       description: "We developed a touchless mobile app that uses LiDAR and AI to evaluate skin prick test results. The system analyzes area, volume, redness, and swelling, providing a probabilistic decision support tool for doctors. The project was successfully completed through two national R&D grants and has been tested with real clinical data. It received a first prize at an international medical congress.",
       status: "Completed",
       highlights: ["LiDAR technology", "Real clinical data", "First prize winner", "National R&D grants"]
     },
     {
       id: 2,
-      title: "Skin Lesion Classification",
+      title: "Skin Lesion Classification App",
       description: "We previously conducted AI research on over 50,000 dermatological images (ISIC dataset) and achieved high classification accuracy even in underrepresented categories. A scientific paper from this study is currently under Q1 journal review.",
-      status: "Published",
+      status: "Under review & In development",
       highlights: ["50,000+ images", "High accuracy", "Q1 journal submission", "ISIC dataset"]
     },
     {
       id: 3,
-      title: "Eyelid Ptosis Diagnosis",
+      title: "Eyelid Ptosis Diagnosis App",
       description: "We are developing a mobile application to support surgical decision-making for eyelid ptosis. By using image-based AI models, we aim to replace manual ruler measurements with contactless, standardized evaluations.",
       status: "In Development",
       highlights: ["Surgical decision support", "Contactless measurement", "AI models", "Standardized evaluation"]
@@ -43,7 +43,7 @@ const RD = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4 fade-in-up">
-            R&D Projects
+            R&D 
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto fade-in-up-delay-1">
             Pioneering research and development in medical imaging and AI diagnostics

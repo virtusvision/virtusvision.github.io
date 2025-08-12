@@ -1,4 +1,5 @@
 import React from 'react';
+import LazyBg from './LazyBg';
 
 const Team = () => {
   const coreTeam = [
@@ -9,7 +10,7 @@ const Team = () => {
       role2: "Virtus R&D Software Inc.",
       description: "Assist. Professor",
       university: "Muğla Sıtkı Koçman University",
-      expertise: ["Statistics", "Computer Vision", "AI Research", "Strategy"],
+      expertise: ["Statistics", "Computer Vision", "AI Research", "Biostatistics"],
       image: "/team/zeynep-eren.jpg"
     },
     {
@@ -20,59 +21,59 @@ const Team = () => {
       description: "Research Assist.",
       university: "Muğla Sıtkı Koçman University",
       expertise: ["Computer Vision", "Software Architecture", "Computer Engineering", "Image Processing"],
-      image: "/team/hasan-ozkan.jpg"
+      image: "/team/hasan-ozkan.JPG"
     }
   ];
 
   const studentTeam = [
     {
       id: 1,
-      name: "Hafize Şanlı",
+      name: "Hafize Sanlı",
       role: "UI/UX Developer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/hafize-sanli.jpg"
+      image: "/team/hafize-sanli.JPG"
     },
     {
       id: 2,
       name: "Ela Semra Sava",
       role: "Flutter Developer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/ela-semra-sava.jpg"
+      image: "/team/ela-semra-sava.JPG"
     },
     {
       id: 3,
       name: "Emre Türkoğlu",
       role: "UI/UX Developer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/emre-turkoglu.jpg"
+      image: "/team/emre-turkoglu.JPG"
     },
     {
       id: 4,
       name: "İbrahim Güler",
       role: "Flutter Developer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/ibrahim-guler.jpg"
+      image: "/team/ibrahim-guler.JPG"
     },
     {
       id: 5,
       name: "Münib Akar",
       role: "Backend Developer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/munib-akar.jpg"
+      image: "/team/munib-akar.JPG"
     },
     {
       id: 6,
       name: "Ali Zekai Deveci",
       role: "Backend Developer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/ali-zekai-deveci.jpg"
+      image: "/team/ali-zekai-deveci.JPG"
     },
     {
       id: 7,
       name: "Emir Turgut",
       role: "Data Engineer",
       university: "Muğla Sıtkı Koçman University",
-      image: "/team/emir-turgut.jpg"
+      image: "/team/emir-turgut.JPG"
     }
   ];
 
@@ -81,25 +82,25 @@ const Team = () => {
       id: 1,
       name: "Dr. Pelin Deniz Tekneci",
       role: "Strategic Operations & Innovation Advisor",
-      image: "/team/pelin-deniz-tekneci.jpg"
+      image: "/team/pelin-deniz-tekneci.JPG"
     },
     {
       id: 2,
       name: "Assoc. Prof. Dr. Ufuk Bal",
       role: "Scientific Advisor for Medical Imaging & Deep Tech AI",
-      image: "/team/ufuk-bal.jpg"
+      image: "/team/ufuk-bal.JPG"
     },
     {
       id: 3,
       name: "Güldesen Denizci",
       role: "Strategic Advisor for Innovation & Female Entrepreneurship",
-      image: "/team/guldesen-denizci.jpg"
+      image: "/team/guldesen-denizci.JPG"
     },
     {
       id: 4,
       name: "Assoc. Prof. Dr. Şükrü Çekiç",
       role: "Clinical Advisor - Pediatric Allergy & Immunology",
-      image: "/team/sukru-cekic.jpg"
+      image: "/team/sukru-cekic.JPG"
     }
   ];
 
@@ -120,10 +121,10 @@ const Team = () => {
           
           <div className="grid md:grid-cols-2 gap-6">
             {coreTeam.map((member, index) => (
-              <div 
-                key={member.id} 
+              <LazyBg
+                key={member.id}
+                src={member.image}
                 className={`leadership-card-modern ${index === 0 ? 'fade-in-up-delay-2' : 'fade-in-right'}`}
-                style={{backgroundImage: `url(${member.image})`}}
               >
                 <div className="card-content">
                   <div className="leadership-name">{member.name}</div>
@@ -135,7 +136,7 @@ const Team = () => {
                     ))}
                   </div>
                 </div>
-              </div>
+              </LazyBg>
             ))}
           </div>
         </div>
@@ -145,36 +146,33 @@ const Team = () => {
           
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8 mb-6">
             {studentTeam.slice(0, 6).map((student, index) => (
-              <div 
-                key={student.id} 
-                className={`student-card-modern card-hover ${index % 2 === 0 ? 'fade-in-up' : 'fade-in-up-delay-1'}`}
-                style={{backgroundImage: `url(${student.image})`}}
+              <LazyBg
+                key={student.id}
+                src={student.image}
+                className={`student-card-modern ${index % 2 === 0 ? 'fade-in-up' : 'fade-in-up-delay-1'}`}
               >
                 <div className="card-content">
                   <div className="student-name">{student.name}</div>
                   <div className="student-role">{student.role}</div>
                   <div className="student-university">{student.university}</div>
                 </div>
-              </div>
+              </LazyBg>
             ))}
           </div>
           
-          {/* Centered last student - Yatay tasarım */}
+          {/* Centered last student - match other cards, slightly larger */}
           <div className="flex justify-center fade-in-right">
-            <div 
-              className="student-card-modern card-hover"
-              style={{
-                backgroundImage: `url(${studentTeam[6].image})`, 
-                width: '400px', 
-                height: '200px'
-              }}
+            <LazyBg
+              src={studentTeam[6].image}
+              className="student-card-modern"
+              style={{ width: '520px', height: '240px' }}
             >
               <div className="card-content">
                 <div className="student-name">{studentTeam[6].name}</div>
                 <div className="student-role">{studentTeam[6].role}</div>
                 <div className="student-university">{studentTeam[6].university}</div>
               </div>
-            </div>
+            </LazyBg>
           </div>
         </div>
 
@@ -185,7 +183,7 @@ const Team = () => {
             {advisoryBoard.map((advisor, index) => (
               <div 
                 key={advisor.id} 
-                className={`advisory-card-modern card-hover ${index % 2 === 0 ? 'fade-in-up-delay-1' : 'fade-in-up-delay-2'}`}
+                className={`advisory-card-modern ${index % 2 === 0 ? 'fade-in-up-delay-1' : 'fade-in-up-delay-2'}`}
                 style={{backgroundImage: `url(${advisor.image})`}}
               >
                 <div className="card-content">
