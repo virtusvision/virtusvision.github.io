@@ -36,7 +36,7 @@ const Contact = () => {
                   Email:
                 </h3>
                 <p className="text-gray-600 ml-11">
-                  info@virtusrnd.com
+                  <a href="mailto:info@virtusrnd.com" className="text-white hover:underline">info@virtusrnd.com</a>
                 </p>
               </div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
                   Website:
                 </h3>
                 <p className="text-gray-600 ml-11">
-                  www.virtusrnd.com
+                  <a href="http://www.virtusrnd.com" className="text-white hover:underline">www.virtusrnd.com</a>
                 </p>
               </div>
 
