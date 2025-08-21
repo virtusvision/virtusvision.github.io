@@ -1,8 +1,10 @@
 import React from 'react';
 
+
 const Services = () => {
   const solutions = [
     {
+      img_path: "/focus/skin.png",
       title: "Skin Testing & Dermatology",
       description: "AI-assisted evaluation of skin health and conditions",
       features: [
@@ -13,6 +15,7 @@ const Services = () => {
       ]
     },
     {
+      img_path: "/focus/facial.png",
       title: "Facial & Eye Diagnostics",
       description: "Computer vision tools for facial and periocular assessment",
       features: [
@@ -24,6 +27,7 @@ const Services = () => {
       ]
     },
     {
+      img_path: "/focus/postur.png",
       title: "Orthopedy & Physiotherapy",
       description: "Posture and movement analysis from video",
       features: [
@@ -33,6 +37,7 @@ const Services = () => {
       ]
     },
     {
+      img_path: "/focus/dental.png",
       title: "Orthodontics & Jaw Assessment",
       description: "Dental-facial analysis for treatment support",
       features: [
@@ -60,11 +65,12 @@ const Services = () => {
 
         <div className="mb-12 fade-in-up-delay-1">
           <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center fade-in-up">Current focus areas:</h3>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             {solutions.map((solution, index) => (
               <div key={index} className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden card-hover ${index === 0 ? 'fade-in-up-delay-1' : index === 1 ? 'fade-in-up-delay-2' : 'fade-in-right'}`}>
                 {/* Solution Content */}
                 <div className="p-6">
+                  <img src={solution.img_path} alt={solution.title} className="w-full h-32 object-cover mb-4 rounded-lg" />
                   <h3 className="text-xl font-bold text-gray-900 mb-4">{solution.title}</h3>
                   <p className="text-gray-600 mb-6 leading-relaxed">
                     {solution.description}

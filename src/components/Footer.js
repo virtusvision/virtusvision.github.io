@@ -41,7 +41,13 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+          <div className="mt-2 flex flex-col md:flex-row justify-center items-center gap-2 text-xs">
+            <a href="/privacy-policy.pdf" className="hover:underline text-gray-400 mx-2" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+            <span className="hidden md:inline">|</span>
+            <a href="/gender-equity-policy.pdf" className="hover:underline text-gray-400 mx-2" target="_blank" rel="noopener noreferrer">Gender Equity Policy</a>
+          </div>
           <p>&copy; 2025 Virtus R&D Software Inc. All rights reserved.</p>
+          
         </div>
       </div>
     </footer>
